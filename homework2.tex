@@ -1,0 +1,25 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{ZK Bootcamp: Homework 2}
+\author{Immanuel Segol}
+\date{July 2022}
+
+\begin{document}
+\maketitle
+
+\subsection*{Problem 1 - Group / Field theory}
+Given $B = \{1,0\}$ and the operation $\oplus$ (described in homework2.pdf), does $B$ and $\oplus$ satisfy group properties?
+\newline
+\newline
+Given the description of operation $\oplus$, we can conclude that  $\oplus \equiv (a + b) \pmod 7$ where $a,b \in B$.
+
+\begin{enumerate}
+    \item Closure, its trivial to verify that any $a \oplus b \in B$
+    \item Associativity, it is trivial to verify that $(1 * 1) * 0 = 1 * (1 * 0)$
+    \item Identity element, it is easy to identify 1 as the identity element
+    \item Inverse element, there exists no inverse element for $1$, $1 * 0 = 0 * 1 =! 1$
+\end{enumerate}
+
+We are able to conclude that B is not a group
+\end{document}
