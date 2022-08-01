@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{ZK Bootcamp: Homework 1}
+\author{Immanuel Segol}
+\date{July 2022}
+
+\begin{document}
+\maketitle
+
+\section*{Maths introduction}
+\subsection*{Problem 1}
+Working with the following set of Integers $S = \{0,1,2,3,4,5,6\}$, what is:
+\begin{enumerate}
+\item $4+4 \equiv 1 \pmod 7$
+\item $3 \cdot 5 \equiv 1 \pmod 7$
+\item Using Fermat's Little Theorem we can find the inverse of 3, $3^{-1} \equiv 3^{7-2} \pmod 7 \equiv 5 \pmod 7$
+%\item $3^{-1} \equiv 5$ 
+\end{enumerate}
+\subsection*{Problem 2}
+For $S =\{0,1,2,3,4,5,6\}$, can we consider S and operation + to be a group ?
+\begin{enumerate}
+\item Closure, for any ${a,b} \in S$, we can see that $a+b \pmod 7 \in S$
+\item Associativity, since $S \subseteq \mathbb{Z}$ thus $(a+b)+c = a+(b+c)$
+\item Identity Element, $0 \in S$ thus for $a \in S,  a + 0 = a$
+\item Inverse element.  $-a \equiv 5a \pmod 7$ and $-a + 5a = 4a \pmod 7 \in S$
+\end{enumerate}
+\subsection*{Problem 3}
+What is $-13 \pmod 5$ ?
+\begin{list}
+    \item $-13 \pmod 5 \equiv -2 \pmod 5 \equiv 2$
+\end{list}
+\end{document}
